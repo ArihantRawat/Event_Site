@@ -9,28 +9,10 @@ $(document).ready(function() {
     } else {
         $('#navvy').removeClass('bg-dark');
         $('#navvy').addClass('transparent');
-        /*$('#navvy').hover(function(){
-          $(this).addClass('bg-dark');
-          $(this).removeClass('transparent');
-        },function(){
-          $(this).removeClass('bg-dark');
-          $(this).addClass('transparent');
-        });*/
+      
     }
   });
 
-  $(".fancybox").fancybox({
-    openEffect: "none",
-    closeEffect: "none"
-});
-
-$(".zoom").hover(function(){
-
-$(this).addClass('transition');
-}, function(){
-    
-$(this).removeClass('transition');
-});
   
 });
 

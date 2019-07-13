@@ -92,7 +92,7 @@
     display:inline-block;
     cursor:pointer;
     color:#306108;
-    font-family:Georgia;
+    font-family:'Courgette';
     font-size:18px;
     font-weight:bold;
     font-style:italic;
@@ -166,8 +166,8 @@
     -webkit-background-clip: padding-box;
     background-clip: padding-box; 
     display:block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:18px;
+    font-family: 'Courgette';
+    font-size:10px;
     color:#fff;
     padding-left:45px;
     padding-right:20px;
@@ -187,7 +187,7 @@
     -webkit-background-clip: padding-box;
     background-clip: padding-box; 
     display:block;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Courgette';
     font-size:18px;
     color:#fff;
     padding-left:20px;

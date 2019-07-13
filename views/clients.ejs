@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/clients.css">
+<script>
+    function myFunction() {
+      var txt;
+      var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");
+      if (r == true) {
+        txt = "You pressed OK!";
+      } else {
+        txt = "You pressed Cancel!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+<h2>All the Messages</h2>
+<p id="demo"></p>
+<div class="row">
+     <% for(var i=0;i<toPost.length;i++){ %>
+            <div class="column">
+                    <div class="card">
+                      <div class="container">
+                        <h2>><%= toPost[i].name %></h2>
+                        <p class="title"><%= toPost[i].email %></p>
+                        <p><%= toPost[i].query %></p>
+                        <p><%= toPost[i].phone %></p>
+                        <form method="POST" action="/clients">
+                        <p><button onclick="myFunction()" class="button" name="btn" value=<%=toPost[i]._id %>>Delete</button></p>
+                       </form>
+                      </div>
+                    </div>
+            </div>
+      <%  } %>
+            
+
+
+</div>
+</div>
+</body>
+</html>

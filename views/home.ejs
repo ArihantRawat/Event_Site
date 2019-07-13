@@ -1,10 +1,5 @@
 <%- include("partials/header"); -%>
 <link rel="stylesheet" href="/css/home.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner"  style=" width:100%;">
@@ -98,12 +93,12 @@
             <h3 class="make_it">always the best</h3>
             <h3 class="make_it">ok ya we the best</h3>
               <br>
-            <button type="button" class="myButton">Learn More</a></button>
+              <a href="/aboutus" class="myButton">Learn More</a>
            </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             
-            <form>
+            <form action="/" method="POST">
                 <h5 id="form_title">Message Us</h5>
                 <input name="name" placeholder="Name" class="name" required />
                 <input name="phonenumber" placeholder="Phone Number" type="phonenumber"class="name" required />

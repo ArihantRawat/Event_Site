@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+
+<link rel="stylesheet" href="/css/contact.css">
+<img src="/images/contact.jpg">
+
+<div class="container">
+<div class="row contact">
+    <div class="col-lg-6 col-md-6 col-sm-12 clients">
+        <h1>Contact Us</h1>
+        <ul class="footer-links">
+                <li class="mr-3444"><h4><i class="fa fa-envelope mr-3" style="font-size:24px"></i>Email</h4></li>    
+                  <br>
+                <li class="mr-3444"><h4><i class="fa fa-phone mr-3" style="font-size:24px"></i>Phone Number</h4></li>
+              </ul>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 service">
+            <form>
+                <h5 id="form_title">Message Us</h5>
+                <input name="name" placeholder="Name" class="name" required />
+                <input name="phonenumber" placeholder="Phone Number" type="phonenumber"class="name" required />
+                <input name="emailaddress" placeholder="Email" class="email" type="email" required />
+                <textarea rows="3" cols="50" name="subject" placeholder="Query" class="message" required></textarea>
+                <input name="submit" class="btn btn-fm" type="submit" value="Send" />
+            </form>
+    </div>
+</div>
+</div>
+
+
+<%- include("partials/footer"); -%>
