@@ -45,8 +45,36 @@ app.get("/photos",function(req,res){
 app.get("/services",function(req,res){
     res.render("services");
 });
-
+app.get("/birthday",function(req,res){
+    res.render("birthday");
+});
+app.get("/cocktail",function(req,res){
+    res.render("cocktail");
+});
+app.get("/wedding",function(req,res){
+    res.render("wedding");
+});
+app.get("/ring",function(req,res){
+    res.render("ring");
+});
+app.get("/corporate_event",function(req,res){
+    res.render("corporate_event");
+});
+app.get("/mehndi",function(req,res){
+    res.render("mehndi");
+});
 app.post("/",function(req,res){
+    const data= new Client({
+        name: req.body.name,
+        phone: req.body.phonenumber,
+        email: req.body.emailaddress,
+        query: req.body.subject,
+    });
+        data.save();
+    res.redirect("/");
+});
+
+app.post("/contactus",function(req,res){
     const data= new Client({
         name: req.body.name,
         phone: req.body.phonenumber,
@@ -71,7 +99,8 @@ app.get("/clients",function(req,res){
             }
         }
     });
-})
+});
+
 app.post("/clients",function(req,res){
     Client.deleteOne({_id: req.body.btn},function(err){
         if(err){
